@@ -69,4 +69,4 @@ Deploy this API. Note that you'll need to create a remote database, run your mig
 
 * You can test your API locally with `npm test`
 
-Add a link to your [deployed API]() here.
+Link to [deployed API here](https://mem2.herokuapp.com/coffees).
