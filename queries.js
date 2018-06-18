@@ -8,14 +8,14 @@ module.exports = {
     return database("coffee").select().where("id", id).first();
   },
   create(coffee) {
-    return database("resolutions")
-      .insert(resolution)
+    return database("coffee")
+      .insert(coffee)
       .returning("*")
       .then(record => record[0]);
   },
   update(id, coffee) {
     return database("coffee")
-      .update(resolution)
+      .update(coffee)
       .where("id", id)
       .returning("*")
       .then(record => record[0]);
